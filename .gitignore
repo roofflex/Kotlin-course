@@ -27,3 +27,11 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/.idea/.gitignore
+/.idea/kotlinc.xml
+/KotlinCourse.iml
+/.idea/libraries/KotlinJavaRuntime.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml
