@@ -3,7 +3,9 @@ const val GOOGLE_URL = "google.com"
 fun main(args: Array<String>) {
 //    helloWorld()
 //    stringExpressions()
-    readNumberFromCommandLine()
+//    readNumberFromCommandLine()
+
+    printTypes()
 }
 
 fun helloWorld() {
@@ -23,4 +25,11 @@ fun readNumberFromCommandLine() {
 
     val input = readLine()?:""
     println("The number is ${input.toInt()}")
+}
+
+fun printTypes() {
+    val dogs: Byte = 5
+    println("value = $dogs, type = ${dogs::class.java}")
+    val pi = 3.1415F
+    println("value = $pi, type = ${pi::class.java}")
 }
