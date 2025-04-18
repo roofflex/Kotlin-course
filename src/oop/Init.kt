@@ -1,15 +1,15 @@
 package oop
 
 fun main() {
-    val mac = Laptop("Mac OS")
-    val lenovo = Laptop("Windows 10")
+    val cucumber = Plant("Green")
+    val tomato = Plant("Red")
 }
 
-class Laptop(private val operatingSystem: String) {
+class Plant(private val color: String) {
 
     // init block is executed right after an object of a class is created,
     // so this is like a "post-construct" function in some sense
     init {
-        println("Operating system $operatingSystem set")
+        println("Plant color $color set")
     }
 }

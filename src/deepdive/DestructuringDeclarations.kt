@@ -16,4 +16,25 @@ fun main() {
             println("We have more than 5 of $fruit. Time to make a juice")
         }
     }
+
+    val kids = listOf(
+        Kid(name = "Ivan", age = 5),
+        Kid(name = "Zhenya", age = 6),
+        Kid(name = "Borya", age = 6)
+    )
+
+    for (kid in kids) {
+        // destructuring declarations are supported for the data classes
+        // this is possible because of the component functions
+        val (name, age) = kid
+
+        if (age > 6) {
+            println("$name is older than 6 years")
+        }
+    }
 }
+
+private data class Kid(
+    val name: String,
+    val age: Int
+)
